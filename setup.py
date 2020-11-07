@@ -1,11 +1,14 @@
+import os
 import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+version = os.environ.get('PACKAGE_VERSION', '0.0.1.dev0')
+
 setuptools.setup(
     name="quicksilver",
-    version="1.0.0",
+    version=version,
     author="Example Author",
     author_email="author@example.com",
     description="A small example package",

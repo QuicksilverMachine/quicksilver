@@ -38,6 +38,7 @@ jobs:
           python-version: 3.9
       - name: Install dependencies
         run: |
+          export PACKAGE_VERSION=${GITHUB_REF:10}
           python setup.py bdist_wheel sdist
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@1.4.1
