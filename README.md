@@ -1,5 +1,5 @@
 # Quicksilver
 
-![build](https://github.com/QuicksilverMachine/quicksilver/workflows/quicksilver/badge.svg)
+![build](https://github.com/QuicksilverMachine/quicksilver/workflows/Build/badge.svg)
 
 Simple package.
