@@ -40,6 +40,7 @@ jobs:
           python-version: 3.9
       - name: Build package
         run: |
+          pip install wheel
           export PACKAGE_VERSION=${GITHUB_REF:10}
           python setup.py bdist_wheel sdist
       - name: Publish package
