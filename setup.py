@@ -9,12 +9,12 @@ version = os.environ.get('PACKAGE_VERSION', '0.0.1.dev0')
 setuptools.setup(
     name="quicksilver",
     version=version,
-    author="Example Author",
-    author_email="author@example.com",
+    author="QuicksilverMachine",
+    author_email="quicksilver.machine@gmail.com",
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/quicksilver",
+    url="https://github.com/quicksilvermachine/quicksilver",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

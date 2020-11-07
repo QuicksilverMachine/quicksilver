@@ -2,4 +2,4 @@
 
 ![build](https://github.com/QuicksilverMachine/quicksilver/workflows/Build/badge.svg)
 
-Simple package.
+Simple test package.
