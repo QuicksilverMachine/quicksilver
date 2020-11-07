@@ -38,12 +38,12 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      - name: Install dependencies
+      - name: Build package
         run: |
           export PACKAGE_VERSION=${GITHUB_REF:10}
           python setup.py bdist_wheel sdist
       - name: Publish package
-        uses: pypa/gh-action-pypi-publish@1.4.1
+        uses: pypa/gh-action-pypi-publish@v1.4.1
         with:
           user: __token__
           password: ${{ secrets.PYPI_PASSWORD }}
