@@ -1,15 +1,15 @@
 name: Build
 
 on:
-  - push:
-      branches:
-        - main
-  - pull_request:
-      branches:
-        - main
-  - release:
-      types:
-        - published
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  release:
+    types:
+      - published
 
 jobs:
   tests:
