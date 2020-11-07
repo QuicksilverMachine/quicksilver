@@ -37,7 +37,7 @@ jobs:
 
   release:
     needs: tests
-    if: github.event_name == 'release' && github.event.action == 'published'
+    if: ${{ github.event_name == 'release' && github.event.action == 'published' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
