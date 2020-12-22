@@ -52,5 +52,6 @@ jobs:
         run: |
           pip install wheel twine
           export PACKAGE_VERSION=${GITHUB_REF:10}
+          echo "__version__ = '$PACKAGE_VERSION'" > quicksilver/version.py
           python setup.py sdist bdist_wheel
           twine upload dist/*
